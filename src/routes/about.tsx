@@ -21,7 +21,7 @@ const team = [
   ["Dr. Maya Chen", "Medical Esthetician"],
   ["Sophia Bennett", "Senior Lash & Brow Artist"],
   ["Olivia Grant", "Bridal Director"],
-];
+] as const;
 
 function About() {
   return (
