@@ -51,7 +51,7 @@ function About() {
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {team.map(([n, r]) => (
             <div key={n} className="border bg-card p-8 text-center">
-              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-secondary font-display text-3xl text-primary">{n.split(" ").slice(-2).map((x) => x[0]).join("")}</div>
+              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-secondary font-display text-3xl text-primary">{n.split(" ").slice(-2).map((x) => x.charAt(0)).join("")}</div>
               <p className="mt-5 font-display text-2xl">{n}</p>
               <p className="mt-1 text-xs tracking-[0.15em] uppercase text-muted-foreground">{r}</p>
             </div>
