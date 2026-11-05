@@ -179,17 +179,3 @@
 
 @keyframes rise { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
 @utility animate-rise { animation: rise 0.9s cubic-bezier(.2,.7,.2,1) both; }
-Append the following CSS to the very end of src/styles.css, Do not change any project or publish settings, 
-
-#lovable-badge,
-a#lovable-badge,
-[id^="lovable-badge"],
-[class*="lovable-badge"],
-a[href*="lovable.dev/projects"],
-a[href*="lovable.dev?utm"],
-a[href*="lovable.dev/?utm"] {
-  display: none !important;
-  opacity: 0 !important;
-  pointer-events: none !important;
-  visibility: hidden !important;
-}
